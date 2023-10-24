@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Practice20</string>
+    <string name="btn_on">Запустиь поток</string>
+    <string name="btn_off">Остановить поток</string>
+</resources>
