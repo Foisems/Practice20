@@ -7,6 +7,7 @@ import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import kotlin.math.round
 
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener{
         setContentView(R.layout.activity_main)
 
         val textView : TextView = findViewById(R.id.textView)
-        val btn : TextView = findViewById(R.id.button)
+        val btn : Button = findViewById(R.id.button)
 
         sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
         gyroscope = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE)!!
